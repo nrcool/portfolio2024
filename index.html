@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Naqvi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="bg"></canvas>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="#home">SN</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <div class="profile-img">
+                <img src="./public/profile.jpg" alt="Syed Naqvi">
+            </div>
+            <h1>Syed Naqvi</h1>
+            <p class="title-text">Full Stack Web Developer</p>
+            <div class="typing-container">
+                <p class="typing-text">Specializing in</p>
+                <div class="typing-words">
+                    <span>MERN Stack Development</span>
+                    <span>Modern Web Applications</span>
+                    <span>Cloud Solutions</span>
+                    <span>Web3 Technologies</span>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-primary">Get in Touch</a>
+                <a href="#projects" class="cta-secondary">View Projects</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/nrcool" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/syed-naveed-naqvi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.xing.com/profile/Syed_Naqvi39" target="_blank"><i class="fab fa-xing"></i></a>
+                <a href="mailto:nrcoollove7214@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </header>
+
+        <section class="about fade-in" id="about">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="about-content">
+                <p class="fade-in">I am a passionate Full Stack Web Developer with extensive expertise in MERN Stack development and modern web technologies. With a strong foundation in both front-end and back-end development, I specialize in creating efficient, scalable, and innovative web applications. My experience spans from traditional web development to cutting-edge technologies like Web3 and cloud computing.</p>
+                <div class="highlights stagger-children">
+                    <div class="highlight-item web-dev">
+                        <i class="fas fa-code"></i>
+                        <h3>Full Stack Development</h3>
+                        <p>Building end-to-end web applications with modern technologies</p>
+                    </div>
+                    <div class="highlight-item cloud-dev">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud & DevOps</h3>
+                        <p>AWS, Firebase, and Serverless architecture expertise</p>
+                    </div>
+                    <div class="highlight-item database-dev">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & API</h3>
+                        <p>GraphQL, REST APIs, and various database solutions</p>
+                    </div>
+                    <div class="highlight-item blockchain-dev">
+                        <i class="fas fa-cubes"></i>
+                        <h3>Web3 Development</h3>
+                        <p>Building decentralized applications and smart contracts</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects fade-in" id="projects">
+            <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
+            <div class="project-grid stagger-children">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/blogs-app-server.png" alt="Blog App Server" loading="lazy">
+                    </div>
+                    <h3>Blog App Server</h3>
+                    <p>A full-stack blogging platform with user authentication, post management, and real-time updates.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nrcool/blogs-app-server" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://blogs-app-server.vercel.app/" target="_blank" class="live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>React</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/React-Chat-App.png" alt="React Chat App" loading="lazy">
+                    </div>
+                    <h3>React Chat App</h3>
+                    <p>Real-time chat application with features like instant messaging, user presence, and chat rooms.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nrcool/React-Chat-App" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://chat-app-react-socket.vercel.app/" target="_blank" class="live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Socket.io</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/NextJS-Random-Users.png" alt="NextJS Random Users" loading="lazy">
+                    </div>
+                    <h3>NextJS Random Users</h3>
+                    <p>A Next.js application showcasing random user profiles with filtering and search capabilities.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nrcool/NextJS-Random-Users" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://random-users-nextjs.vercel.app/" target="_blank" class="live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Next.js</span>
+                        <span>React</span>
+                        <span>API Integration</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/express-server-kit.png" alt="Express Server Kit" loading="lazy">
+                    </div>
+                    <h3>Express Server Kit</h3>
+                    <p>A robust Express.js server boilerplate with authentication, routing, and database integration.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nrcool/express-server-kit" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Express.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/React-GetMyBrowserSize.png" alt="Browser Size Tool" loading="lazy">
+                    </div>
+                    <h3>Browser Size Tool</h3>
+                    <p>A React application that displays real-time browser window dimensions with responsive design.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nrcool/React-GetMyBrowserSize" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://browser-size.vercel.app/" target="_blank" class="live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>CSS3</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./public/React-Crypto-Coins-App.png" alt="Crypto Coins App" loading="lazy">
+                    </div>
+                    <h3>Crypto Coins App</h3>
+                    <p>Real-time cryptocurrency tracking application with price updates and market cap information.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/nrcool/React-Crypto-Coins-App" target="_blank" class="github-btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://crypto-coins-app.vercel.app/" target="_blank" class="live-btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Crypto API</span>
+                        <span>Chart.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills fade-in" id="skills">
+            <h2><i class="fas fa-tools"></i> Skills & Technologies</h2>
+            <div class="skills-container stagger-children">
+                <div class="skills-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill html-skill"><i class="fab fa-html5"></i> HTML5</div>
+                        <div class="skill css-skill"><i class="fab fa-css3-alt"></i> CSS3</div>
+                        <div class="skill js-skill"><i class="fab fa-js"></i> JavaScript</div>
+                        <div class="skill react-skill"><i class="fab fa-react"></i> React.js</div>
+                        <div class="skill angular-skill"><i class="fab fa-angular"></i> Angular</div>
+                        <div class="skill nextjs-skill"><i class="fas fa-n"></i> Next.js</div>
+                        <div class="skill vue-skill"><i class="fab fa-vuejs"></i> Vue.js</div>
+                        <div class="skill sass-skill"><i class="fab fa-sass"></i> Sass</div>
+                        <div class="skill tailwind-skill"><i class="fab fa-css3"></i> Tailwind CSS</div>
+                        <div class="skill bootstrap-skill"><i class="fab fa-bootstrap"></i> Bootstrap</div>
+                        <div class="skill responsive-skill"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill nodejs-skill"><i class="fab fa-node"></i> Node.js</div>
+                        <div class="skill express-skill"><i class="fas fa-server"></i> Express.js</div>
+                        <div class="skill mongodb-skill"><i class="fas fa-database"></i> MongoDB</div>
+                        <div class="skill mysql-skill"><i class="fas fa-database"></i> MySQL</div>
+                        <div class="skill rest-skill"><i class="fas fa-server"></i> RESTful APIs</div>
+                        <div class="skill auth-skill"><i class="fas fa-lock"></i> Authentication</div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skills-grid">
+                        <div class="skill aws-skill">
+                            <i class="fab fa-aws"></i>
+                            AWS
+                        </div>
+                        <div class="skill firebase-skill">
+                            <i class="fas fa-fire"></i>
+                            Firebase
+                        </div>
+                        <div class="skill serverless-skill">
+                            <i class="fas fa-cloud"></i>
+                            Serverless
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Modern Web Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill graphql-skill">
+                            <i class="fas fa-project-diagram"></i>
+                            GraphQL
+                        </div>
+                        <div class="skill web3-skill">
+                            <i class="fas fa-link"></i>
+                            Web3
+                        </div>
+                        <div class="skill blockchain-skill">
+                            <i class="fas fa-cube"></i>
+                            Blockchain
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill git-skill"><i class="fab fa-git-alt"></i> Git</div>
+                        <div class="skill github-skill"><i class="fab fa-github"></i> GitHub</div>
+                        <div class="skill docker-skill"><i class="fab fa-docker"></i> Docker</div>
+                        <div class="skill npm-skill"><i class="fab fa-npm"></i> npm</div>
+                        <div class="skill typescript-skill"><i class="fas fa-code"></i> TypeScript</div>
+                        <div class="skill terminal-skill"><i class="fas fa-terminal"></i> Command Line</div>
+                        <div class="skill git-branch-skill"><i class="fas fa-code-branch"></i> Version Control</div>
+                        <div class="skill debug-skill"><i class="fas fa-bug"></i> Debugging</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience fade-in" id="experience">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <div class="timeline stagger-children">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Teacher Web Dev</h3>
+                        <p class="company">DCI Digital Career Institute gGmbH</p>
+                        <p class="timeline-date">Jul 2020 - Present · 4 yrs 6 mos</p>
+                        <p class="location">Berlin, Germany · Remote</p>
+                        <ul class="experience-details">
+                            <li>Teaching web development fundamentals to aspiring developers</li>
+                            <li>Conducting daily classes on HTML, CSS, JavaScript, and React</li>
+                            <li>Mentoring students in building full-stack applications</li>
+                            <li>Creating comprehensive curriculum and learning materials</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Lecturer</h3>
+                        <p class="company">DCI Digital Career Institute gGmbH</p>
+                        <p class="timeline-date">Feb 2020 - Jul 2020 · 6 mos</p>
+                        <p class="location">Berlin Area, Germany</p>
+                        <ul class="experience-details">
+                            <li>Assisted in teaching web development courses</li>
+                            <li>Provided support to students in technical concepts</li>
+                            <li>Helped develop course materials and exercises</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Assistant Lecturer</h3>
+                        <p class="company">DCI Digital Career Institute gGmbH</p>
+                        <p class="timeline-date">Nov 2019 - Feb 2020 · 4 mos</p>
+                        <p class="location">Berlin Area, Germany</p>
+                        <ul class="experience-details">
+                            <li>Supported main instructors in teaching activities</li>
+                            <li>Provided one-on-one assistance to students</li>
+                            <li>Helped prepare teaching materials</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Tutor</h3>
+                        <p class="company">DCI Digital Career Institute gGmbH</p>
+                        <p class="timeline-date">Mar 2019 - Nov 2019 · 9 mos</p>
+                        <p class="location">Berlin Area, Germany</p>
+                        <p class="employment-type">Part-time</p>
+                        <ul class="experience-details">
+                            <li>Provided tutoring support to web development students</li>
+                            <li>Assisted with coding exercises and projects</li>
+                            <li>Helped students understand programming concepts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Educational Consultant</h3>
+                        <p class="company">Global Choices</p>
+                        <p class="timeline-date">Sep 2009 - May 2014 · 4 yrs 9 mos</p>
+                        <p class="location">Lahore, Pakistan</p>
+                        <ul class="experience-details">
+                            <li>Provided educational consulting services</li>
+                            <li>Assisted students with career guidance</li>
+                            <li>Managed student counseling programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact fade-in" id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact</h2>
+            <p class="fade-in">I'm always interested in hearing about new projects and opportunities.</p>
+            <div class="contact-container stagger-children">
+                <div class="contact-form">
+                    <h3>Send me a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="from_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:nrcoollove7214@gmail.com">nrcoollove7214@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>Berlin, Germany</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h4>Social Media</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/nrcool" target="_blank" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/syed-naveed-naqvi/" target="_blank" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.xing.com/profile/Syed_Naqvi39" target="_blank" title="Xing">
+                                    <i class="fab fa-xing"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Syed Naqvi. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+    <script src="animations.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
