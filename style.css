@@ -1172,3 +1172,96 @@ html {
 #code-rain {
     display: none;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    main {
+        padding: 1rem;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        padding-top: 100px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    .title-text {
+        font-size: 1.2rem;
+    }
+
+    .typing-container {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem 0;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .project-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tech-stack {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Prevent horizontal scrolling on all screen sizes */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
