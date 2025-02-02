@@ -1,4 +1,5 @@
 // Wait for the DOM to load
+console.log("working")
 document.addEventListener('DOMContentLoaded', () => {
     // Scene setup
     const scene = new THREE.Scene();
